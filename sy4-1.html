@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>sy4-1布局页面</title>
+    <style type="text/css">
+        body{
+            font-size: 20px;
+        }
+        #box{
+            background-color: grey;
+            border: 2px solid #000000;
+            color: white;
+            padding: 20px;
+            height: 920px;
+            width: 850px;
+            margin: 20px;
+            }
+        #header{
+            background-color: red;
+            border: 2px solid yellow;
+            padding: 15px;
+            height: 300px;
+            width: 770px;
+            margin: 20px;
+        }
+        #logo{
+            background-color: yellow;
+            border: 2px solid black;
+            color: black;
+            padding: 20px;
+            width: 200px;
+            height: 40px;
+            margin: 35px;
+        }
+        #banner{
+            background-color: blue;
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+            height: 40px;
+            float: right;
+            margin: 20px;
+        }
+        #menu{
+            background-color: darkgreen;
+            border: 2px solid black;
+            padding: 20px;
+            height: 40px;
+            width: 670px;
+            color: white;
+            margin: 35px;
+        }
+        #main{
+            background-color: green;
+            border: 2px solid yellow;
+            padding: 20px;
+            width: 770px;
+            height: 350px;
+            margin: 20px;
+        }
+        #sidebar{
+            background-color: blue;
+            border: 2px solid white;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            margin: 40px;
+        }
+        #content{
+            background-color: cornflowerblue;
+            border: 2px solid white;
+            padding: 20px;
+            width: 400px;
+            height: 200px;
+            float: right;
+            margin: 20px;
+        }
+        #footer{
+            background-color: red;
+            border: 2px solid yellow;
+            padding: 20px;
+            width: 770px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <p style="color: black">div->box 包含下面3部分结构div（header,main,footer）， 布局网页宽度和居中</p>
+    <div id="header">
+        <p style="color: yellow">div->header 包含下面3个结构div 布局头部高度和主要背景</p>
+        <div id="banner">div->id=banner</div>
+        <div id="logo">div->id=logo</div>
+        <div id="menu" >div->id=menu</div>
+    </div>
+    <div id="main">
+        <p style="color: white">div->id=main 包含下面2个div（sidebar，content）</p>
+        <div id="content">div->id=content</div>
+        <div id="sidebar">div->id=sidebar</div>
+    </div>
+    <div id="footer">div->id=footer</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>4-2网页布局</title>
+    <style type="text/css">
+        body{
+            width: 780px;
+            height: 900px;
+            padding: 5px;
+            margin: 0 auto;
+        }
+        #box{
+            height: 890px;
+        }
+        #header{
+            border: 1px solid white;
+            margin-left: 5px;
+            margin-right: 5px;padding-bottom: 0px;
+            height: 91px;
+        }
+        #ul ul{
+            list-style: none;
+        }
+        #ul li{
+            float: right;
+            width: 50px;
+            height: 30px;
+            background-color: white;
+            margin-top: 20px;
+            border-right: 2px solid blue;
+        }
+        #ul{
+            margin-right: 20px;
+        }
+        #ul a{
+            display: block;
+            text-align: center;
+            height: 15px;
+            padding-top: 5px;
+        }
+        #ul a:link{
+            color:#666;
+            text-decoration: none;
+        }
+        #ul a:visited{
+            color:#666;
+            text-decoration: underline;
+        }
+        #ul a:hover{
+            color:#FFF;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        #logo{
+            margin-left: 10px;
+            width: 400px;
+            height: 50px;
+        }
+        #nav{
+            margin-left: 5px;
+            margin-right: 5px;
+            margin-top: 0px;
+            padding: 5px;
+            padding-top: 0px;
+            height: 215px;
+        }
+        #content{
+            padding-top: 5px;
+            margin-left: 5px;
+            margin-right: 5px;
+            float: right;
+            width: 550px;
+            height: 450px;
+        }
+        #oneword{
+            float: right;
+            width: 360px;
+            margin-top: 20px;
+        }
+        #onepic{
+            width: 180px;
+            height: 150px;
+            margin-top: 30px;
+            margin-bottom: 31px;
+            border: 2px solid darkgrey;
+        }
+        #twopic{
+            width: 180px;
+            height: 150px;
+            margin-top: 30px;
+            border: 2px solid darkgrey;
+        }
+        #twoword{
+            float: right;
+            width: 360px;
+            margin-top: 12px;
+        }
+        #sidebar{
+            margin-left: 5px;
+            margin-right: 5px;
+            width: 210px;
+            height: 455px;
+            margin-bottom: 20px;
+        }
+        #footer{
+            padding-top: 8px;
+            height: 80px;
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+<div id="box">
+    <div id="header">
+        <div id="ul">
+            <ul>
+                <li style="border-right: none"><a href="1">关于</a></li>
+                <li><a href="2">论坛</a></li>
+                <li><a href="3">相册</a></li>
+                <li><a href="4">设计</a></li>
+                <li><a href="5">博客</a></li>
+                <li><a href="6">首页</a></li>
+            </ul>
+        </div>
+        <div id="logo" align="left">
+            <img src="logo.jpg">
+        </div>
+        <hr style="border: 4px solid black;margin-top: 15px;"/>
+    </div>
+    <div id="nav" align="center">
+        <img src="banner.jpg" style="padding-top: 0px"/>
+    </div>
+    <div id="content">
+        <div id="oneword">
+            <table align="center">
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">风格名称：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">Red Vision</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">设计作者：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">郑木头</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">CSS制作：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">番茄红了</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">发布时间：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">2005/11/04</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">演示地址：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">http://www.tblog.com.cn</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">风格简介：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">此风格设计来自网友“郑木头”，由</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right"></td>
+                    <td style="font-size: 14px;width: 280px" align="left">PJBLOG团队（番茄红了、舜子）共同完成,在此感谢“郑木头”提供的设计风格。</td>
+                </tr>
+            </table>
+        </div>
+        <div id="onepic">
+            <img src="content1.jpg" style="padding-top: 20px;padding-left: 17px"/>
+        </div>
+        <hr style="border: 1px dashed lightgrey"/>
+        <div id="twoword">
+            <table align="center">
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">风格名称：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">Dawn(黎明)</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">设计作者：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">番茄红了</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">CSS制作：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">番茄红了</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">发布时间：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">2005/09/19</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">演示地址：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">http://www.tblog.com.cn</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right">风格简介：</td>
+                    <td style="font-size: 14px;width: 280px" align="left">本SKIN适用于PJBLOG2　V2.3版本。</td>
+                </tr>
+                <tr>
+                    <td style="font-size: 14px;font-weight: bold;width: 80px" align="right"></td>
+                    <td style="font-size: 14px;width: 280px" align="left">本SKIN经测试完全兼容IE、Mozilla Firefox浏览器。建议在1024X768下浏览。</td>
+                </tr>
+            </table>
+        </div>
+        <div id="twopic">
+            <img src="content2.jpg" style="padding-top: 20px;padding-left: 13px" align="center"/>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div id="search" style="width: 200px;height: 20px;padding-bottom: 7px;padding-top: 5px" align="center">
+            <input style="width: 165px" type="search" name="search" placeholder="请输入关键字"/>
+        </div>
+        <span style="font-size: 16px;margin-left: 16px;">会员登录</span>
+        <table style="width:200px;cellpadding:3;bgcolor:white" align="center">
+            <tr align="center">
+                <td style="width:120px;height:20px;font-size: 14px"align="right">用户名:</td>
+                <td style="width:80px;height:20px" align="left"><input type="text" style="width: 93px"/></td>
+            </tr>
+            <tr align="center">
+                <td style="width:120px;height:20px;font-size: 14px" align="right">密&nbsp&nbsp&nbsp码:</td>
+                <td style="width:80px;height:20px" align="left"><input type="text" style="width:90px"/></td>
+            </tr>
+            <tr align="center">
+                <td style="width: 0px;height: 20px"></td>
+                <td style="width: 200px;height: 20px" align="left">
+                    <input type="submit" name="submit" value="登录"/>
+                    <input type="submit" name="zhuce" value="注册"/>
+                </td>
+            </tr>
+        </table>
+        <div style="width: 200px;margin-left: 16px">
+            <h1 style="font-size: 16px;font-weight: bold;margin-left: 5px">站点信息</h1>
+            <ul type="disc" style="list-style: none;font-size: 14px">
+                <li>访问：6562次</li>
+                <li>在线：12人</li>
+                <li>会员：3244人</li>
+                <li>留言：3216个</li>
+                <li>建站：2006/03/20</li>
+            </ul>
+        </div>
+        <div style="width: 200px;margin-left: 5px">
+            <h1 style="font-size: 16px;font-weight: bold;margin-left: 16px">页面标准</h1>
+            <table style="width: 200px;margin-left: 35px" align="left">
+                <tr align="left" style="height: 18px"><td align="left"><img src="biao1.jpg"/></td></tr>
+                <tr align="left" style="height: 18px"><td align="left"><img src="biao2.jpg"/></td></tr>
+                <tr align="left" style="height: 18px"><td align="left"><img src="biao3.jpg"/></td></tr>
+                <tr align="left" style="height: 18px"><td align="left"><img src="biao4.jpg"/></td></tr>
+            </table>
+        </div>
+    </div>
+    <hr style="border: 2px solid dimgrey;margin-bottom: 3px"/>
+    <div id="footer">
+        <p style="font-size: 10px" align="center">Copyright 2009 wangminghui.com All Rights Reserved &nbsp&nbsp&nbsp&nbsp&nbsp xhtml &nbsp|&nbsp css</p>
+        <p style="font-size: 12px" align="center">湘ICP备06001797号</p>
+    </div>
+</div>
+</body>
+</html>

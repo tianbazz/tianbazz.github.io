@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style type="text/css">
+        body{
+            font-family: 华文宋体;
+            font-size: 15px;
+            color: steelblue;
+        }
+        fieldset{
+            border: 1px solid steelblue;
+        }
+        legend{
+            border: 1px solid steelblue;
+            width: 20%;
+            align-content: center;
+        }
+        table{
+             color: grey;
+        }
+        #page{
+            border: 1px solid steelblue;
+            width: 700px;
+            padding: 20px;
+            margin: 0 auto;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="page">
+        <h3 style="color: grey;font-weight: bold">已注册用户登录</h3>
+            <fieldset>
+                <legend>
+                    <div align="center" style="font-weight: bold">用户登录</div>
+                </legend>
+                <table width="500" border="0"bordercolor="blue" align="center" cellpadding="3" cellspacing="2" bgcolor="white">
+                        <tr align="center">
+                            <td width="200" height="20" align="right">用户名</td>
+                            <td width="400" height="20" align="left"><input type="text" style="width: 160px"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right">密码</td>
+                            <td width="400" height="20" align="left"><input type="text" width="150px"/></td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right"><input type="checkbox" name="remenber" value="remenber"/><label style="color: steelblue">记住我</label></td>
+                            <td align="left"><input type="submit" value="登录" style="background-color: lightskyblue;border: 1px solid steelblue;width: 80px"/></td>
+                        </tr>
+                </table>
+                <label style="color: steelblue">您忘记密码？</label></td>
+            </fieldset>
+        <h3 style="color: grey;font-weight: bold">未注册创建账户</h3>
+            <fieldset>
+                <legend>
+                    <div align="center" style="font-weight: bold">用户注册</div>
+                </legend>
+                <p style="font-weight: bold">您的电子邮箱不会被公布出去，但是必须填写，在您注册之前请先认真阅读服务条款。</p>
+                    <table width="500" border="0"bordercolor="blue" align="center" cellpadding="3" cellspacing="2" bgcolor="white">
+                        <tr align="center">
+                            <td width="200" height="20" align="right">用户名</td>
+                            <td width="400" height="20" align="left"><input type="text" name="username" id="username" maxlength="30" style="width: 160px"/>*（最多30个字符）</td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right">电子邮箱</td>
+                            <td width="400" height="20" align="left"><input type="text" name="letter" id="letter" style="width: 160px"/>*</td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right">密码</td>
+                            <td width="400" height="20" align="left"><input type="text" name="password" id="password" maxlength="15" style="width: 140px"/>*（最多15个字符）</td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right">重复密码</td>
+                            <td width="400" height="20" align="left"><input type="text" name="repassword" id="repassword" style="width: 140px"/>*</td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right">同意服务条款</td>
+                            <td width="400" height="20" align="left"><input type="checkbox" name="agree" id="agree"/><label style="color: steelblue">先看看条款？*</label></td>
+                        </tr>
+                        <tr align="center">
+                            <td width="200" height="20" align="right"></td>
+                            <td width="400" height="20" align="left">
+                                <input type="submit" value="提交" style="background-color: lightskyblue;border: 1px solid steelblue;width: 80px"/>
+                                <input type="submit" value="重置" style="background-color: lightskyblue;border: 1px solid steelblue;width: 80px"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <p style="font-weight: bold">*在提交您的注册信息时，我们认为您已经同意了我们的服务条款。</p>
+                    <p style="font-weight: bold">*这些条款可能在未经您同意的时候进行修改。</p>
+            </fieldset>
+    </div>
+</body>
+</html>
